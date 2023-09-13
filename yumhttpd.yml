@@ -4,9 +4,9 @@
   tasks:
     - name: Install the latest version of Apache2
       ansible.builtin.yum:
-        name: apache2
+        name: httpd
         state: latest
     - name: Start service Apache2, if not started
       ansible.builtin.service:
-        name: apache2
+        name: httpd
         state: started     
